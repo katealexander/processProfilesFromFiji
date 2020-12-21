@@ -2,7 +2,7 @@
 Analysis of immunofluorescence data using Fiji to create intensity profiles and Python to process them. This analysis is fairly specific to particular dataset, and is likely not broadly useful.
 ## Collect intensity profiles from Fiji
 In Fiji, use the line tool to draw a line across the region of interest. To get the profile, use command-K, then click live. Navigate in the Fiji GUI to the channel for which you would like to get the profile. You should see the profile changing as you change the channel. Copy the profile from each channel next to eachother in an excel spreadsheet. In order to later process the data, keep the order of the channels copied consistent between profiles. Copy the next profile under the first in the spreadsheet. When finished, copy all the profiles to a text file, which will look like this (see "WT_profilesSRRM2exonsp53introns.txt"):
-'''
+```
 0	1456	0	738.333	0	1888.333	0	978.667
 1	1432.835	1	742.573	1	2026.615	1	982.318
 2	1413.899	2	739.28	2	2112.26	2	969.608
@@ -105,7 +105,7 @@ In Fiji, use the line tool to draw a line across the region of interest. To get 
 48	2522.792	48	755.1772	48	2470.738	48	1000.472
 49	2392.882	49	757.7615	49	2464.493	49	1002.607
 50	2154	50	739	50	2462	50	982
-'''
+```
 ## Generate normalized profiles for making heatmaps, find the number of profiles with p53 local maxima near the speckle and near the transcription site
 
 ## Return a table of p53 intensities in speckles, outside of speckles, and inside divided by outside of speckles
