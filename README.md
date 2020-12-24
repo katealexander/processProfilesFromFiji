@@ -107,6 +107,6 @@ In Fiji, use the line tool to draw a line across the region of interest. To get 
 50	2154	50	739	50	2462	50	982
 ```
 ## Generate normalized profiles for making heatmaps, find the number of profiles with p53 local maxima near the speckle and near the transcription site
-
+Having collected the profiles for four channels (speckle, exon, p53, and intron in that order)
 ## Return a table of p53 intensities in speckles, outside of speckles, and inside divided by outside of speckles
 ## Return a table of p53 intensities at the transcription site, outside of the transcription site, and at divided by outside the transcription site
