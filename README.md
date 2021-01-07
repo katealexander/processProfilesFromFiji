@@ -107,7 +107,7 @@ In Fiji, use the line tool to draw a line across the region of interest. Make it
 50	2154	50	739	50	2462	50	982
 ```
 ### Generate normalized profiles for making heatmaps, find the number of profiles with p53 local maxima near the speckle and near the transcription site
-Having collected the profiles for four channels (speckle, exon, p53, and intron in that order), this Python script will normalize the values for each profile so that they are internally normalized. Will return 4 text files (one for each channel) that can then be used in R to generate heatmaps of the profiles. It will also print out the number of profiles with p53 local maxima near the speckle or near the transcription site.
+Having collected the profiles for four channels (speckle, exon, p53, and intron in that order), this Python script will normalize the values for each profile so that each profile is internally normalized between 1 and 0. Will return 4 text files (one for each channel) that can then be used in R to generate heatmaps of the profiles. It will also print out the number of profiles with p53 local maxima near the speckle or near the transcription site.
 ```
 python formatProfileForHeatmap.py profiles filePrefix 
 ```
