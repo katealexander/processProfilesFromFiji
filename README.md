@@ -1,6 +1,6 @@
 # Process Profiles From Fiji
 Analysis of immunofluorescence data using Fiji to create intensity profiles and Python to process them. This analysis is fairly specific to particular dataset, and is likely not broadly useful.
-## Collect intensity profiles from Fiji
+### Collect intensity profiles from Fiji
 In Fiji, use the line tool to draw a line across the region of interest. To get the profile, use command-K, then click live. Navigate in the Fiji GUI to the channel for which you would like to get the profile. You should see the profile changing as you change the channel. Copy the profile from each channel next to eachother in an excel spreadsheet. In order to later process the data, keep the order of the channels copied consistent between profiles. Copy the next profile under the first in the spreadsheet. When finished, copy all the profiles to a text file, which will look like this (see "WT_profilesSRRM2exonsp53introns.txt"):
 ```
 0	1456	0	738.333	0	1888.333	0	978.667
@@ -106,7 +106,10 @@ In Fiji, use the line tool to draw a line across the region of interest. To get 
 49	2392.882	49	757.7615	49	2464.493	49	1002.607
 50	2154	50	739	50	2462	50	982
 ```
-## Generate normalized profiles for making heatmaps, find the number of profiles with p53 local maxima near the speckle and near the transcription site
-Having collected the profiles for four channels (speckle, exon, p53, and intron in that order)
-## Return a table of p53 intensities in speckles, outside of speckles, and inside divided by outside of speckles
-## Return a table of p53 intensities at the transcription site, outside of the transcription site, and at divided by outside the transcription site
+### Generate normalized profiles for making heatmaps, find the number of profiles with p53 local maxima near the speckle and near the transcription site
+Having collected the profiles for four channels (speckle, exon, p53, and intron in that order), this Python script will normalize the values for each profile so that they are internally normalized. Will return 4 text files (one for each channel) that can then be used in R to generate heatmaps of the profiles. It will also print out the number of profiles with p53 local maxima near the speckle or near the transcription site.
+```
+python 
+```
+### Return a table of p53 intensities in speckles, outside of speckles, and inside divided by outside of speckles
+### Return a table of p53 intensities at the transcription site, outside of the transcription site, and at divided by outside the transcription site
